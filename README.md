@@ -66,4 +66,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 # Author
 **Yash Menaria**  
-GitHub: https://github.com/Yashmenaria1`
+GitHub Profile: https://github.com/Yashmenaria1
