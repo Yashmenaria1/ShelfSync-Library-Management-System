@@ -2,8 +2,9 @@
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-2.7.0-brightgreen)
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![Maven](https://img.shields.io/badge/Maven-3.9.0-red)
-![Node](https://img.shields.io/badge/Node-18.17.0-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18.3-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Tomcat](https://img.shields.io/badge/Tomcat-10.1.20-yellow)
 
 **ShelfSync-Library Management System**
 ---
@@ -30,8 +31,7 @@ LibraryManagement/
 │ ├── src/
 │ ├── public/
 │ └── package.json
-├── README.md
-└── .gitignore
+└── README.md
 ```
 ---
 ## Installation
@@ -67,7 +67,7 @@ The frontend will run on `http://localhost:3000` and connect to the backend API.
 * **Backend:** Java, Spring Boot, Spring Data JPA, MVC, Microservices, PostgreSQL
 * **Frontend:** React.js, Bootstrap
 * **Version Control:** Git & GitHub
-* **Build Tools:** Maven, npm
+* **Build Tools:** Maven, npm, Tomcat
 
 ---
 
@@ -79,4 +79,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author
 
-**Yash Menaria** – [GitHub Profile]([https://github.com/Yashmenaria1])
+**Yash Menaria** – [GitHub Profile](https://github.com/Yashmenaria1)
