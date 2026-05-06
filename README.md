@@ -5,10 +5,9 @@
 ![Node](https://img.shields.io/badge/Node-18.17.0-green)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-**Library Management System**
+**ShelfSync-Library Management System**
 ---
-A full-stack Library Management System built with **Java Spring Boot** (backend) and **React.js** (frontend).  
-This application allows managing books, authors, categories, and members. Users can borrow and return books, and search the library efficiently.
+ShelfSync is a scalable full-stack Library Management System developed with Spring Boot and React.js, designed to streamline library operations. It supports book cataloging, member management, borrow/return workflows, and fast search functionality with a responsive user interface.
 ---
 ## Features
 - Add, update, delete books
@@ -39,8 +38,8 @@ LibraryManagement/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/krkarthik-dev/LibraryManagement.git
-cd LibraryManagement
+git clone https://github.com/Yashmenaria1/ShelfSync-Library-Management-System.git
+cd ShelfSync-Library-Management-System
 ```
 
 ### 2. Backend (Spring Boot)
@@ -65,8 +64,8 @@ The frontend will run on `http://localhost:3000` and connect to the backend API.
 
 ## Technologies Used
 
-* **Backend:** Java, Spring Boot, Spring Data JPA, MySQL/H2
-* **Frontend:** React.js, Bootstrap, Axios
+* **Backend:** Java, Spring Boot, Spring Data JPA, MVC, Microservices, PostgreSQL
+* **Frontend:** React.js, Bootstrap
 * **Version Control:** Git & GitHub
 * **Build Tools:** Maven, npm
 
@@ -80,4 +79,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author
 
-**K R Karthik** – [GitHub Profile](https://github.com/krkarthik-dev)
+**Yash Menaria** – [GitHub Profile]([https://github.com/Yashmenaria1])
