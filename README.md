@@ -45,6 +45,7 @@ ShelfSync-Library-Management-System/
 │   │   │   │           │   ├── UserController.java
 │   │   │   │           │   ├── BookController.java
 │   │   │   │           │   ├── CategoryController.java
+│   │   │   │           │   ├── AuthorController.java
 │   │   │   │           │   ├── BorrowController.java
 │   │   │   │           │   ├── FineController.java
 │   │   │   │           │   ├── NotificationController.java
@@ -55,6 +56,7 @@ ShelfSync-Library-Management-System/
 │   │   │   │           │   ├── UserService.java
 │   │   │   │           │   ├── BookService.java
 │   │   │   │           │   ├── CategoryService.java
+│   │   │   │           │   ├── AuthorService.java
 │   │   │   │           │   ├── BorrowService.java
 │   │   │   │           │   ├── FineService.java
 │   │   │   │           │   ├── EmailService.java
@@ -66,6 +68,7 @@ ShelfSync-Library-Management-System/
 │   │   │   │           │   ├── UserServiceImpl.java
 │   │   │   │           │   ├── BookServiceImpl.java
 │   │   │   │           │   ├── CategoryServiceImpl.java
+│   │   │   │           │   ├── AuthorServiceImpl.java
 │   │   │   │           │   ├── BorrowServiceImpl.java
 │   │   │   │           │   ├── FineServiceImpl.java
 │   │   │   │           │   ├── EmailServiceImpl.java
@@ -77,6 +80,7 @@ ShelfSync-Library-Management-System/
 │   │   │   │           │   ├── RoleRepository.java
 │   │   │   │           │   ├── BookRepository.java
 │   │   │   │           │   ├── CategoryRepository.java
+│   │   │   │           │   ├── AuthorRepository.java
 │   │   │   │           │   ├── BorrowRepository.java
 │   │   │   │           │   ├── FineRepository.java
 │   │   │   │           │   └── NotificationRepository.java
@@ -85,6 +89,7 @@ ShelfSync-Library-Management-System/
 │   │   │   │           │   ├── BaseEntity.java
 │   │   │   │           │   ├── User.java
 │   │   │   │           │   ├── Role.java
+│   │   │   │           │   ├── Author.java
 │   │   │   │           │   ├── Book.java
 │   │   │   │           │   ├── Category.java
 │   │   │   │           │   ├── BorrowRecord.java
