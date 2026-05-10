@@ -269,6 +269,31 @@ ShelfSync-Library-Management-System/
 ├── README.md
 └── docker-compose.yml
 ```
+---
+
+## Backend Flow
+```markdown
+
+React Frontend
+        ↓
+CORS allows request
+        ↓
+Controller receives request
+        ↓
+DTO mapped using ModelMapper
+        ↓
+Service processes logic
+        ↓
+Repository accesses PostgreSQL
+        ↓
+Redis caches result
+        ↓
+Swagger documents endpoint
+        ↓
+Logs generated
+```
+---
+
 ## Installation
 
 ### 1. Clone the Repository
