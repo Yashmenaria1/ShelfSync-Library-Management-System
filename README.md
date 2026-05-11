@@ -119,6 +119,7 @@ ShelfSync-Library-Management-System/
 │   │   │   │           │   │   ├── JwtAuthenticationFilter.java
 │   │   │   │           │   │   ├── JwtService.java
 │   │   │   │           │   │   ├── JwtAuthenticationEntryPoint.java
+│   │   │   │           │   │   ├── JwtUtil.java
 │   │   │   │           │   │   └── JwtTokenProvider.java
 │   │   │   │           │   │
 │   │   │   │           │   └── service/
@@ -142,15 +143,11 @@ ShelfSync-Library-Management-System/
 │   │   │   │           ├── util/
 │   │   │   │           │   ├── AppConstants.java
 │   │   │   │           │   ├── DateUtil.java
-│   │   │   │           │   ├── JwtUtil.java
 │   │   │   │           │   └── PaginationUtil.java
 │   │   │   │
 │   │   │   │           ├── scheduler/
 │   │   │   │           │   ├── FineScheduler.java
 │   │   │   │           │   └── NotificationScheduler.java
-│   │   │   │
-│   │   │   │           ├── logging/
-│   │   │   │           │   └── LoggingAspect.java
 │   │   │   │
 │   │   │   │           ├── aspect/
 │   │   │   │           │   ├── PerformanceTrackingAspect.java
