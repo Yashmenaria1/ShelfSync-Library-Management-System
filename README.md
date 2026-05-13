@@ -9,6 +9,9 @@
 **ShelfSync-Library Management System**
 ---
 ShelfSync is a scalable full-stack Library Management System developed with Spring Boot and React.js, designed to streamline library operations. It supports book cataloging, member management, borrow/return workflows, and fast search functionality with a responsive user interface.
+
+The current codebase in this repository represents a basic LMS backend implementation built using Spring Boot with layered architecture, RESTful APIs, JPA/Hibernate integration, and PostgreSQL database support. I am currently working on the advanced enterprise-level version of ShelfSync with enhanced architecture, security, scalability, and additional production-grade features. Once completed, the full enterprise edition of ShelfSync will be moved to a separate dedicated GitHub repository.
+
 ---
 ## Features
 - Add, update, delete books
