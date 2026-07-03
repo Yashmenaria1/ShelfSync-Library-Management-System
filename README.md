@@ -195,71 +195,238 @@ ShelfSync-Library-Management-System/
 │   ├── pom.xml
 │   └── README.md
 │
-├── frontend/                                 # React Frontend
+├── frontend/                                 # React + Vite Frontend
 │   │
 │   ├── public/
 │   │   ├── favicon.ico
-│   │   ├── index.html
-│   │   └── manifest.json
+│   │   ├── manifest.json
+│   │   ├── robots.txt
+│   │   ├── logo.png
+│   │   └── index.html
 │   │
 │   ├── src/
-│   │   ├── api/
-│   │   │   ├── authApi.js
-│   │   │   ├── bookApi.js
-│   │   │   ├── borrowApi.js
-│   │   │   └── axiosConfig.js
+│   │
+│   │   ├── app/                              # Application Entry
+│   │   │   ├── App.jsx
+│   │   │   ├── main.jsx
+│   │   │   ├── router.jsx
+│   │   │   ├── providers.jsx
+│   │   │   └── queryClient.js
 │   │   │
 │   │   ├── assets/
+│   │   │
 │   │   │   ├── images/
 │   │   │   ├── icons/
+│   │   │   ├── fonts/
+│   │   │   ├── illustrations/
 │   │   │   └── styles/
+│   │   │       ├── globals.css
+│   │   │       ├── variables.css
+│   │   │       ├── animations.css
+│   │   │       ├── scrollbar.css
+│   │   │       └── theme.css
 │   │   │
 │   │   ├── components/
-│   │   │   ├── common/
-│   │   │   ├── auth/
-│   │   │   ├── books/
-│   │   │   ├── borrow/
-│   │   │   ├── dashboard/
-│   │   │   └── layout/
 │   │   │
-│   │   ├── context/
-│   │   │   └── AuthContext.jsx
+│   │   │   ├── ui/
+│   │   │   │
+│   │   │   │   ├── Button.jsx
+│   │   │   │   ├── Input.jsx
+│   │   │   │   ├── TextArea.jsx
+│   │   │   │   ├── Select.jsx
+│   │   │   │   ├── Checkbox.jsx
+│   │   │   │   ├── Radio.jsx
+│   │   │   │   ├── Badge.jsx
+│   │   │   │   ├── Avatar.jsx
+│   │   │   │   ├── Card.jsx
+│   │   │   │   ├── Modal.jsx
+│   │   │   │   ├── Drawer.jsx
+│   │   │   │   ├── Table.jsx
+│   │   │   │   ├── Pagination.jsx
+│   │   │   │   ├── Tooltip.jsx
+│   │   │   │   ├── Tabs.jsx
+│   │   │   │   ├── Spinner.jsx
+│   │   │   │   ├── Skeleton.jsx
+│   │   │   │   ├── SearchBar.jsx
+│   │   │   │   ├── ConfirmDialog.jsx
+│   │   │   │   ├── Breadcrumb.jsx
+│   │   │   │   └── DataTable.jsx
+│   │   │   │
+│   │   │   ├── layout/
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── DashboardLayout.jsx
+│   │   │   │   ├── AuthLayout.jsx
+│   │   │   │   ├── AdminLayout.jsx
+│   │   │   │   └── PageContainer.jsx
+│   │   │   │
+│   │   │   ├── common/
+│   │   │   │   ├── Loader.jsx
+│   │   │   │   ├── EmptyState.jsx
+│   │   │   │   ├── ErrorBoundary.jsx
+│   │   │   │   ├── NoData.jsx
+│   │   │   │   ├── Unauthorized.jsx
+│   │   │   │   ├── PageHeader.jsx
+│   │   │   │   └── PageTitle.jsx
+│   │   │   │
+│   │   │   └── charts/
+│   │   │       ├── BorrowChart.jsx
+│   │   │       ├── FineChart.jsx
+│   │   │       ├── CategoryChart.jsx
+│   │   │       ├── UserChart.jsx
+│   │   │       └── DashboardChart.jsx
+│   │   │
+│   │   ├── features/
+│   │   │
+│   │   │   ├── auth/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── hooks/
+│   │   │   │   ├── pages/
+│   │   │   │   ├── services/
+│   │   │   │   ├── validation/
+│   │   │   │   └── authStore.js
+│   │   │   │
+│   │   │   ├── dashboard/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   └── services/
+│   │   │   │
+│   │   │   ├── users/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   ├── services/
+│   │   │   │   ├── hooks/
+│   │   │   │   └── validation/
+│   │   │   │
+│   │   │   ├── books/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   ├── services/
+│   │   │   │   ├── hooks/
+│   │   │   │   └── validation/
+│   │   │   │
+│   │   │   ├── authors/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   ├── services/
+│   │   │   │   └── validation/
+│   │   │   │
+│   │   │   ├── categories/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   ├── services/
+│   │   │   │   └── validation/
+│   │   │   │
+│   │   │   ├── borrow/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   ├── services/
+│   │   │   │   ├── hooks/
+│   │   │   │   └── validation/
+│   │   │   │
+│   │   │   ├── fines/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   └── services/
+│   │   │   │
+│   │   │   ├── notifications/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   └── services/
+│   │   │   │
+│   │   │   ├── reports/
+│   │   │   │   ├── api/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   └── services/
+│   │   │   │
+│   │   │   ├── profile/
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   └── services/
+│   │   │   │
+│   │   │   └── settings/
+│   │   │       ├── components/
+│   │   │       ├── pages/
+│   │   │       └── services/
 │   │   │
 │   │   ├── hooks/
-│   │   │   └── useAuth.js
+│   │   │   ├── useAuth.js
+│   │   │   ├── usePagination.js
+│   │   │   ├── useSearch.js
+│   │   │   ├── useDebounce.js
+│   │   │   ├── useModal.js
+│   │   │   ├── useLocalStorage.js
+│   │   │   └── useTheme.js
 │   │   │
-│   │   ├── pages/
-│   │   │   ├── LoginPage.jsx
-│   │   │   ├── RegisterPage.jsx
-│   │   │   ├── DashboardPage.jsx
-│   │   │   ├── BooksPage.jsx
-│   │   │   ├── BorrowPage.jsx
-│   │   │   └── AdminPage.jsx
+│   │   ├── context/
+│   │   │   ├── AuthProvider.jsx
+│   │   │   ├── ThemeProvider.jsx
+│   │   │   └── NotificationProvider.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   ├── axiosClient.js
+│   │   │   ├── interceptor.js
+│   │   │   ├── tokenService.js
+│   │   │   ├── storageService.js
+│   │   │   └── fileUploadService.js
 │   │   │
 │   │   ├── routes/
 │   │   │   ├── AppRoutes.jsx
-│   │   │   └── ProtectedRoute.jsx
+│   │   │   ├── ProtectedRoute.jsx
+│   │   │   ├── AdminRoute.jsx
+│   │   │   ├── GuestRoute.jsx
+│   │   │   └── RoleBasedRoute.jsx
 │   │   │
-│   │   ├── services/
-│   │   │   ├── authService.js
-│   │   │   ├── bookService.js
-│   │   │   └── borrowService.js
+│   │   ├── store/
+│   │   │   ├── authStore.js
+│   │   │   ├── dashboardStore.js
+│   │   │   ├── bookStore.js
+│   │   │   ├── borrowStore.js
+│   │   │   ├── notificationStore.js
+│   │   │   └── themeStore.js
 │   │   │
 │   │   ├── utils/
-│   │   │   ├── tokenUtils.js
-│   │   │   └── constants.js
+│   │   │   ├── constants.js
+│   │   │   ├── permissions.js
+│   │   │   ├── validators.js
+│   │   │   ├── dateUtils.js
+│   │   │   ├── pagination.js
+│   │   │   ├── helper.js
+│   │   │   └── exportUtils.js
 │   │   │
-│   │   ├── App.jsx
-│   │   ├── main.jsx
+│   │   ├── config/
+│   │   │   ├── env.js
+│   │   │   ├── routes.js
+│   │   │   ├── sidebar.js
+│   │   │   ├── roles.js
+│   │   │   └── menu.js
+│   │   │
+│   │   ├── types/
+│   │   │   └── api.types.js
+│   │   │
 │   │   └── index.css
 │   │
 │   ├── .env
-│   ├── .gitignore
+│   ├── .env.development
+│   ├── .env.production
+│   ├── .eslint.config.js
+│   ├── .prettierrc
+│   ├── jsconfig.json
 │   ├── package.json
 │   ├── vite.config.js
 │   └── README.md
 │
-├── docs/                                     # Project Documentation
+├── docs/
 │   ├── API_DOCUMENTATION.md
 │   ├── DATABASE_SCHEMA.md
 │   ├── SECURITY_FLOW.md
@@ -269,10 +436,25 @@ ShelfSync-Library-Management-System/
 ├── postman/
 │   └── ShelfSync_API_Collection.json
 │
+├── .github/
+│   ├── workflows/
+│   │   ├── backend-ci.yml
+│   │   ├── frontend-ci.yml
+│   │   └── deploy.yml
+│   │
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
+│
+├── scripts/
+│   ├── setup.sh
+│   ├── setup.bat
+│   └── deploy.sh
+│
+├── .editorconfig
 ├── .gitignore
+├── docker-compose.yml
 ├── LICENSE
-├── README.md
-└── docker-compose.yml
+└── README.md
 ```
 ---
 
